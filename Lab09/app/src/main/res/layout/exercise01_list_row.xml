@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+      android:id="@+id/imgv_thumb"
+      android:layout_width="110dp"
+      android:layout_height="110dp"
+      android:src="@android:drawable/ic_menu_report_image" />
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_marginLeft="10dp"
+      android:layout_weight="1">
+
+        <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="File Name"/>
+        <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="Size: 0 MB"/>
+
+        <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="status: Complete"/>
+
+        <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <Button
+          android:id="@+id/btnDownload"
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:textAllCaps="false"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="8dp"
+          android:text="Download" />
+
+          <Button
+            android:id="@+id/btnView"
+              android:layout_weight="1"
+              android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Images" />
+      </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lab10</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="YOUR_API_KEY">AIzaSyA_gkqOyBozVXQxGMvMl82Vqb9smWLIcxM</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/option_group_select"
+        android:icon="@drawable/ic_baseline_check_circle_24"
+        android:title="CHECK"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/checkAll"
+                android:title="CHECK ALL"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/uncheckAll"
+                android:title="UNCHECK ALL"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/option_group_delete"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="DELETE"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/removeSelected"
+                android:title="REMOVE SELECTED"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/removeAll"
+                android:title="REMOVE ALL"
+                app:showAsAction="never"></item>
+        </menu>
+    </item>
+
+</menu>

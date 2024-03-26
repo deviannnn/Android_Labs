@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Nhập nội dung ở đây"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="3"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReadInternal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="read_internal_file"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnReadExternal"
+           android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:backgroundTint="#A92030"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="read_external_file"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnWriteInternal"
+            android:layout_width="0dp"            android:padding="15dp"
+            android:backgroundTint="@color/teal_700"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="write_internal_file"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnWriteExternal"
+            android:layout_width="0dp"
+            android:padding="15dp"
+            android:backgroundTint="#A92030"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="write_external_file"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
